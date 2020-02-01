@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pases</title>
+</head>
+<body>
+	<img src="Logo.jpg" style="width: 250px; margin-left: 75px">
+	<form name="formulario2">
+		<fieldset style="width: 400px">
+			<legend>General</legend>
+		<fieldset style="width: 350px">
+			<legend>Presione el boton correspondiente</legend>
+			<table>
+				<tr>
+				    <td><input type="Text" name="PasesBuenos" id="n1" readonly=""></td>
+				    <td></td>
+				    <td><input type="Text" name="PasesMalos" id="n2" readonly=""></td>
+  				</tr>
+
+				<tr>
+				    <td><input type="Button" value="Buenos" name="BotonBuenos" onclick="formulario2.PasesBuenos.value++"></td>
+				    <td></td>
+				    <td><input type="Button" value="Malos" name="BotonMalos" onclick="formulario2.PasesMalos.value++"></td>
+				</tr>
+			</table>
+		</fieldset>
+	<br>
+		<fieldset style="width: 350px">
+			<legend>Estadisticas</legend>
+			<table>
+
+				<tr>
+				  	<td>Total de Pases:</td>
+				  	<td></td>
+				  	<td><input type="Text" id="resultado" name="TotalPases" readonly=""></td>
+				</tr>
+				<tr>
+				  	<td>Porcentaje de Buenos pases:</td>
+				  	<td></td>
+				  	<td><input type="Text" id="PorcBue" name="%Good" readonly=""></td>
+				</tr>
+				<tr>
+				  	<td>Porcentaje de Pases Erroneos:</td>
+				  	<td></td>
+				  	<td><input type="Text" id="PorcBad" name="%Bad" readonly=""></td>
+				</tr>
+			</table>
+		</fieldset>
+	<br>
+	<form>
+		<fieldset style="width: 350px">
+			<legend>Operaciones</legend>
+			<table>
+				<tr>
+					<td><input type="Button" name="Estadisticas" value="Estadisticas" onclick="suma()" class="showResults"> </td>
+					<script type="text/javascript" src="suma.js" ></script>
+				  	<td><input type="Button" value="Guardar" onclick="print();"></td>
+				  	<td><input type="Reset" name="Nuevo"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</fieldset>
+	</form>
+</body>
+</html>
